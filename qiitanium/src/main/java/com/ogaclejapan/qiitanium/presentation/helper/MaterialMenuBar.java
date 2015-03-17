@@ -8,7 +8,8 @@ import com.ogaclejapan.qiitanium.util.ViewUtils;
 
 import android.app.Activity;
 import android.view.View;
-import android.widget.Toolbar;
+//import android.widget.Toolbar;
+import android.support.v7.widget.Toolbar;
 
 public class MaterialMenuBar extends MaterialMenuBase {
 

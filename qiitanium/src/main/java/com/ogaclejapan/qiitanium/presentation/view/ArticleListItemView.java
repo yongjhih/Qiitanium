@@ -10,16 +10,17 @@ import com.ogaclejapan.rx.binding.RxView;
 import com.squareup.picasso.Transformation;
 
 import android.app.Activity;
-import android.app.ActivityOptions;
+import android.support.v4.app.ActivityOptionsCompat;
 import android.content.Context;
 import android.util.AttributeSet;
-import android.util.Pair;
+import android.support.v4.util.Pair;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import rx.Subscription;
 import rx.subscriptions.Subscriptions;
+import android.os.Bundle;
 
 public class ArticleListItemView extends AppView<ArticleViewModel> {
 
@@ -46,12 +47,12 @@ public class ArticleListItemView extends AppView<ArticleViewModel> {
     }
 
     @SuppressWarnings("unchecked")
-    public ActivityOptions getActivityOptions(Activity activity) {
-        return ActivityOptions.makeSceneTransitionAnimation(
+    public Bundle getActivityOptions(Activity activity) {
+        return ActivityOptionsCompat.makeSceneTransitionAnimation(
                 activity,
                 Pair.create((View)mTitleText.get(), "article_title"),
                 Pair.create((View)mCreatedAtText.get(), "article_timeago"),
-                Pair.create((View)mAuthorThumbnailImage.get(), "author_image"));
+                Pair.create((View)mAuthorThumbnailImage.get(), "author_image")).toBundle();
     }
 
     @Override

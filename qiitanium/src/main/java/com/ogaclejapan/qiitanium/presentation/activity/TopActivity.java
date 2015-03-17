@@ -20,7 +20,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.widget.ImageView;
-import android.widget.Toolbar;
+//import android.widget.Toolbar;
+import android.support.v7.widget.Toolbar;
 
 public class TopActivity extends AppActivity {
 
@@ -44,7 +45,7 @@ public class TopActivity extends AppActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_top);
-        setActionBar(ViewUtils.<Toolbar>findById(this, R.id.toolbar));
+        setSupportActionBar(ViewUtils.<Toolbar>findById(this, R.id.toolbar));
 
         mDrawerToggle = MaterialMenuDrawerToggle.with(this);
 

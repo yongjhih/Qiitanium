@@ -30,7 +30,7 @@
                     android:src="@drawable/ic_view_list_white_24dp"
                     android:scaleType="center"
                     android:clickable="true"
-                    android:background="@drawable/btn_circle_drawer_menu_ripple_selector"/>
+                    android:background="@drawable/btn_circle_drawer_menu_selector"/>
 
             <TextView
                     android:layout_width="match_parent"
@@ -57,7 +57,7 @@
                     android:src="@drawable/ic_style_white_24dp"
                     android:scaleType="center"
                     android:clickable="true"
-                    android:background="@drawable/btn_circle_drawer_menu_ripple_selector"/>
+                    android:background="@drawable/btn_circle_drawer_menu_selector"/>
 
             <TextView
                     android:layout_width="match_parent"
@@ -84,7 +84,7 @@
                     android:src="@drawable/ic_person_outline_white_24dp"
                     android:scaleType="center"
                     android:clickable="true"
-                    android:background="@drawable/btn_circle_drawer_menu_ripple_selector"/>
+                    android:background="@drawable/btn_circle_drawer_menu_selector"/>
 
             <TextView
                     android:layout_width="match_parent"
@@ -111,7 +111,7 @@
                     android:src="@drawable/ic_settings_white_24dp"
                     android:scaleType="center"
                     android:clickable="true"
-                    android:background="@drawable/btn_circle_drawer_menu_ripple_selector"/>
+                    android:background="@drawable/btn_circle_drawer_menu_selector"/>
 
             <TextView
                     android:layout_width="match_parent"

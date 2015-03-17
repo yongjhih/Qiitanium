@@ -148,7 +148,7 @@ public class ArticleListFragment extends AppFragment
         final Intent intent = ArticleDetailActivity
                 .intentOf(getContext(), item.id(), item.authorName().get());
 
-        startActivity(intent, itemView.getActivityOptions(getActivity()).toBundle());
+        startActivity(intent, itemView.getActivityOptions(getActivity()));
     }
 
 }

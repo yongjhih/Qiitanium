@@ -3,23 +3,27 @@
 
     <style name="AppTheme" parent="AppBaseTheme"/>
 
-    <style name="AppBaseTheme" parent="android:Theme.Material.Light.NoActionBar">
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="android:colorPrimary">@color/primary</item>
         <item name="android:colorPrimaryDark">@color/primary_dark</item>
         <item name="android:colorAccent">@color/accent</item>
         <item name="android:colorControlHighlight">@color/accent_light</item>
         <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
     </style>
 
-    <style name="AppToolbar">
-        <item name="android:background">?android:attr/colorPrimary</item>
-        <item name="android:elevation">@dimen/actionbar_elevation</item>
+    <style name="AppToolbar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">@color/primary</item>
+        <!--<item name="android:elevation">@dimen/actionbar_elevation</item>-->
         <item name="android:transitionName">actionBar</item>
-        <item name="android:theme">@android:style/ThemeOverlay.Material.Dark.ActionBar</item>
-        <item name="android:popupTheme">@android:style/ThemeOverlay.Material.Light</item>
+        <!--<item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>-->
+        <!--<item name="android:popupTheme">@style/ThemeOverlay.AppCompat.Light</item>-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
     </style>
 
-    <style name="AppDialog" parent="android:Theme.Material.Light.Dialog">
+    <style name="AppDialog" parent="Theme.AppCompat.Light.Dialog">
         <item name="android:colorBackground">@color/white</item>
         <item name="android:colorControlHighlight">@color/accent_light</item>
     </style>

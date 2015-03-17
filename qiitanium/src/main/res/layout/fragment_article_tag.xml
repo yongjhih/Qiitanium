@@ -39,7 +39,7 @@
                 android:layout_height="match_parent"
                 android:dividerHeight="@dimen/spacing_small"
                 android:divider="@null"
-                android:listSelector="@drawable/bg_list_item_ripple_selector"/>
+                android:listSelector="@drawable/bg_list_item_selector"/>
 
         <include layout="@layout/include_empty"/>
 
